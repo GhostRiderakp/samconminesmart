@@ -11,6 +11,8 @@
     <Win32Resource />
     <PackageIcon>Tk.png</PackageIcon>
     <PackageIconUrl />
+    <SignAssembly>false</SignAssembly>
+    <NoWin32Manifest>true</NoWin32Manifest>
    
   </PropertyGroup>
   <ItemGroup>
