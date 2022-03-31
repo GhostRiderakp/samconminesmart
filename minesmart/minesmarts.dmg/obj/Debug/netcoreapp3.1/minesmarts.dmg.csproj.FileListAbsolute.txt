@@ -1,0 +1,13 @@
+E:\msgit\minesmart\minesmarts.dmg\bin\Debug\netcoreapp3.1\minesmarts.dmg.deps.json
+E:\msgit\minesmart\minesmarts.dmg\bin\Debug\netcoreapp3.1\minesmarts.dmg.dll
+E:\msgit\minesmart\minesmarts.dmg\bin\Debug\netcoreapp3.1\minesmarts.dmg.pdb
+E:\msgit\minesmart\minesmarts.dmg\bin\Debug\netcoreapp3.1\DMGENCODEDECODE.dll
+E:\msgit\minesmart\minesmarts.dmg\bin\Debug\netcoreapp3.1\System.Management.dll
+E:\msgit\minesmart\minesmarts.dmg\obj\Debug\netcoreapp3.1\minesmarts.dmg.GeneratedMSBuildEditorConfig.editorconfig
+E:\msgit\minesmart\minesmarts.dmg\obj\Debug\netcoreapp3.1\minesmarts.dmg.AssemblyInfoInputs.cache
+E:\msgit\minesmart\minesmarts.dmg\obj\Debug\netcoreapp3.1\minesmarts.dmg.AssemblyInfo.cs
+E:\msgit\minesmart\minesmarts.dmg\obj\Debug\netcoreapp3.1\minesmarts.dmg.csproj.CoreCompileInputs.cache
+E:\msgit\minesmart\minesmarts.dmg\obj\Debug\netcoreapp3.1\minesmarts.dmg.csproj.CopyComplete
+E:\msgit\minesmart\minesmarts.dmg\obj\Debug\netcoreapp3.1\minesmarts.dmg.dll
+E:\msgit\minesmart\minesmarts.dmg\obj\Debug\netcoreapp3.1\minesmarts.dmg.pdb
+E:\msgit\minesmart\minesmarts.dmg\obj\Debug\netcoreapp3.1\minesmarts.dmg.csproj.AssemblyReference.cache

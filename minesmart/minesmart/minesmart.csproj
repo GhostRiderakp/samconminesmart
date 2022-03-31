@@ -1,0 +1,149 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <ApplicationIcon>favicon.ico</ApplicationIcon>
+    <FileVersion>1.0.0.0</FileVersion>
+    <Version>1.0.0.0-sam</Version>
+    <Win32Resource />
+    <PackageIcon>Tk.png</PackageIcon>
+    <PackageIconUrl />
+   
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="ErrorLog\bin\**" />
+    <Compile Remove="Properties\PublishProfiles\**" />
+    <EmbeddedResource Remove="ErrorLog\bin\**" />
+    <EmbeddedResource Remove="Properties\PublishProfiles\**" />
+    <None Remove="ErrorLog\bin\**" />
+    <None Remove="Properties\PublishProfiles\**" />
+    <None Include="Tk.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Helper\Cls_PostMines.cs" />
+    <Compile Remove="Helper\Cls_Setting.cs" />
+    <Compile Remove="Helper\CommandHandler.cs" />
+    <Compile Remove="Helper\CommanWeighBridge.cs" />
+    <Compile Remove="Helper\DMGService.cs" />
+    <Compile Remove="Helper\MultipleLoad.cs" />
+    <Compile Remove="Helper\weightReader.cs" />
+    <Compile Remove="MasterForm.cs" />
+    <Compile Remove="MasterForm.Designer.cs" />
+    <Compile Remove="ViewModels\SettingModel.cs" />
+    <Compile Remove="ViewModels\WebAPIModel.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="MasterForm.fr.resx" />
+    <EmbeddedResource Remove="MasterForm.resx" />
+    <EmbeddedResource Remove="Resource\StringResourcesEng.xaml" />
+    <EmbeddedResource Remove="Resource\StringResourcesHin.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DeviceId" Version="6.2.0" />
+    <PackageReference Include="JetBrains.Annotations" Version="2021.3.0" />
+    <PackageReference Include="Nancy" Version="2.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="Serilog" Version="2.10.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.3" />
+    <PackageReference Include="System.IO.Ports" Version="6.0.0" />
+    <PackageReference Include="System.Windows.Extensions" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\minesmarts.dmg\minesmarts.dmg.csproj" />
+  </ItemGroup>
+   
+  <ItemGroup>
+    <None Update="Resource\StringResourcesEng.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Resource\StringResourcesHin.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="OpenCvSharp">
+      <HintPath>..\..\..\digitaxindiajpr\ERawannaProject\GitProject\Release\netcoreapp3.1\win-x64\OpenCvSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenCvSharp.Blob">
+      <HintPath>..\..\..\digitaxindiajpr\ERawannaProject\GitProject\Release\netcoreapp3.1\win-x64\OpenCvSharp.Blob.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenCvSharp.Extensions">
+      <HintPath>..\..\..\digitaxindiajpr\ERawannaProject\GitProject\Release\netcoreapp3.1\win-x64\OpenCvSharp.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenCvSharp.UserInterface">
+      <HintPath>..\..\..\digitaxindiajpr\ERawannaProject\GitProject\Release\netcoreapp3.1\win-x64\OpenCvSharp.UserInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Management">
+      <HintPath>..\..\..\digitaxindiajpr\ERawannaProject\GitProject\Debug\netcoreapp3.1\System.Management.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.AccessControl">
+      <HintPath>..\..\..\digitaxindiajpr\ERawannaProject\GitProject\Debug\netcoreapp3.1\System.Threading.AccessControl.dll</HintPath>
+    </Reference>
+    <Reference Include="WebEye.Controls.WinForms.StreamPlayerControl">
+      <HintPath>..\..\..\digitaxindiajpr\ERawannaProject\GitProject\Release\netcoreapp3.1\win-x64\WebEye.Controls.WinForms.StreamPlayerControl.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Product.cs" />
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Update="Resource\ResEnglish.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ResEnglish.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Resource\ResHindi.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ResHindi.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="FinalPage.resx">
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resource\ResEnglish.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResEnglish.Designer.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resource\ResHindi.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResHindi.Designer.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+</Project>
