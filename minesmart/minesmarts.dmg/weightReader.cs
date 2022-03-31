@@ -16,6 +16,7 @@ namespace minesmart.DGMS
     {
         public weightReader()
         {
+
             // Finding installed serial ports on hardware
             _currentSerialSettings.PortNameCollection = SerialPort.GetPortNames();
             _currentSerialSettings.PropertyChanged += new System.ComponentModel.PropertyChangedEventHandler(_currentSerialSettings_PropertyChanged);
