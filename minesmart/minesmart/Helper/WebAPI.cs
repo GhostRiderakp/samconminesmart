@@ -26,7 +26,7 @@ namespace ERawaana.Helper
         static JavaScriptSerializer jss = new JavaScriptSerializer();
         static DataTable dtJsonMessage = new DataTable();
         static string Onlinewebsiteurl = "http://dmg.minesmart.in/";
-       // static string Onlinewebsiteurl = "http://localhost:49997/";
+       //static string Onlinewebsiteurl = "http://localhost:49997/";
 
 
         #region Checking User Name and Password Valid
